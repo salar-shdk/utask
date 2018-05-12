@@ -10,3 +10,6 @@ it contains three parts :
 - it reminds you to reserve every WED with a notification
 
 3- comming soon ...
+
+download:
+https://github.com/salar-shdk/utask/raw/master/app/release/app-release.apk
