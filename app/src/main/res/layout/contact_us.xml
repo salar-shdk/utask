@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+    <com.example.salar.cevent.FontedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="16sp"
+        android:gravity="center"
+        android:text="it's beta version, interesting updates coming soon. and feel free to share your ideas with us :)"
+        />
+    <android.support.v7.widget.CardView
+        android:id="@+id/mail_salar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_mail"
+                android:padding="11dp"
+                android:layout_marginLeft="8dp"
+                />
+            <com.example.salar.cevent.FontedTextView
+                android:id="@+id/name_salar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Amirsalar Darvishpoor"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/mail_khojir"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_mail"
+                android:padding="11dp"
+                android:layout_marginLeft="8dp"
+                />
+            <com.example.salar.cevent.FontedTextView
+                android:id="@+id/name_khojir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hamid Fazli Khojir"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

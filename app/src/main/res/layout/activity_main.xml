@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.salar.cevent.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ut_logo"
+                android:layout_margin="32dp"
+                />
+        </RelativeLayout>
+        <com.example.salar.cevent.FontedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="University Of Tehran Auto Login Service"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_add_account"
+                android:layout_width="wrap_content"
+                android:layout_margin="16dp"
+                app:cardElevation="5dp"
+                android:background="@drawable/ripple"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="5dp"
+                android:layout_height="48dp">
+                <com.example.salar.cevent.FontedTextView
+                    android:id="@+id/show_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Add Account"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="16sp"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+        <com.example.salar.cevent.FontedTextView
+            android:id="@+id/main_volume_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remained Data :"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <com.example.salar.cevent.FontedTextView
+                android:id="@+id/main_remained_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textSize="66sp"
+                />
+            <com.example.salar.cevent.FontedTextView
+                android:id="@+id/main_volume_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:gravity="bottom"
+                android:layout_toRightOf="@id/main_remained_volume"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_contact_us"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardElevation="5dp"
+            android:background="@drawable/ripple"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="6dp"
+
+            >
+            <com.example.salar.cevent.FontedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="Contact Us"
+                android:gravity="center"
+                />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_github"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardElevation="5dp"
+            android:background="@drawable/ripple"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="6dp"
+
+            >
+            <com.example.salar.cevent.FontedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="Source On Github"
+                android:gravity="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
