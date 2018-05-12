@@ -45,6 +45,8 @@ class AddDialog(c: Context, private val callback: AddDialog.Callback) : AlertDia
         btn_add.setOnClickListener(this)
         text_username.setTypeface(2)
         text_password.setTypeface(2)
+        text_username.setText(MainActivity.getUsername(context))
+        text_password.setText(MainActivity.getPassword(context))
     }
 
     /**
