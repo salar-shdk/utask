@@ -4,6 +4,7 @@ it contains three parts :
 
 1- Auto Login service 
 - just enter your university email account username & password & you will automatically get loged-in everytime connecting to a ut-wifi
+- shows your this month remaining data
 
 2- dinning reservation reminder
 - it reminds you to reserve every WED with a notification
