@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity(), RemainedVolumeLoader.Callback,AddDialo
                 contact_us_dialog.show()
             }
             main_github.id -> {
-                Log.d("----------------","github")
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(GITHUB_URL))
                 startActivity(browserIntent)
             }
