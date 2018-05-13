@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), RemainedVolumeLoader.Callback,AddDialo
         private val USERNAME = "username"
         private val PASSWORD = "password"
         private val VERSION = 1
-        private val GITHUB_URL = "https://github.com/salar-shdk/utask"
+        private val GITHUB_URL = "https://github.com/blacknose-rooster/utask"
 
         fun editPreferences(context: Context, username:String, password:String){
             val preferences : SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity(), RemainedVolumeLoader.Callback,AddDialo
     }
     val responseListener = Response.Listener<String> {
         response ->
-        val jsonObject = JSONObject(response)
+        val jsonObject = JSONObject(response.toString())
         if(Integer.parseInt(jsonObject.getString("update"))> VERSION){
             val url = jsonObject.getString("link")
             val u = UpdateDialog(this)
